@@ -1,0 +1,57 @@
+#red-fill {
+    height: 50px;
+    width: 50px;
+    background: red;
+}
+
+#red-fill:hover {
+    animation-name: fill;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes fill {
+    0% {
+        width: 50px;
+    }
+    100% {
+        width: 500px;
+    }
+}
+
+/* second exercise */
+#red-box {
+    height: 50px;
+    width: 50px;
+    background: tomato;
+    position: absolute;
+    transition-property: left;
+    transition: 3s;
+    left: 0;
+}
+
+#green-box {
+    height: 50px;
+    width: 50px;
+    background: lightseagreen;
+    position: absolute;
+    margin-top: 60px;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    left: 0;
+}
+
+.box {
+    margin-top: 20px;
+    background: aliceblue;
+    width: 500px;
+    height: 110px;
+    position: relative; 
+    left: 0;
+}
+
+ .box:hover #red-box, .box:hover #green-box{
+    left: 90%;
+}
+
